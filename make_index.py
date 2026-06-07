@@ -160,9 +160,14 @@ footer{color:var(--muted);font-size:12px;margin-top:40px;text-align:center;}
 def git_publish(dir_: str, msg: str) -> None:
     """Stage everything in dir_, commit, and push. No-op (with a note) when
     the tree is already clean. Raises on a real git/push failure."""
+    # Sanitize the env so git's ssh transport uses the system libssl, not the
+    # conda env's (which triggers "OpenSSL version mismatch" and a push fail).
+    env = {k: v for k, v in os.environ.items() if k != "LD_LIBRARY_PATH"}
+    env.setdefault("GIT_SSH_COMMAND", "/usr/bin/ssh")
+
     def run(*cmd, capture=False):
         return subprocess.run(["git", "-C", dir_, *cmd], check=True,
-                              text=True, capture_output=capture)
+                              text=True, capture_output=capture, env=env)
 
     if run("rev-parse", "--is-inside-work-tree", capture=True).stdout.strip() != "true":
         print(f"[publish] {dir_} is not a git repo -- skipping push")
