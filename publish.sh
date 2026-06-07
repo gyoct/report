@@ -18,12 +18,12 @@ python "$PROD/btc_monetization2/build_report.py" \
   --analysis_out "$PROD/btc_monetization2/analysis_out" \
   --out_dir "$REPORT_DIR" --name btc_prod2.html
 
-python3 "$PROD/eth/build_report.py" \
+python "$PROD/eth/build_report.py" \
   --analysis_out "$PROD/eth/analysis_out" \
   --out_dir "$REPORT_DIR" --name eth_prod.html
 
 echo "==> rebuilding index + publishing"
 # make_index.py rebuilds index.html and (unless --no-push) commits + pushes.
-python3 "$REPORT_DIR/make_index.py" --dir "$REPORT_DIR"
+python "$REPORT_DIR/make_index.py" --dir "$REPORT_DIR"
 
 echo "==> done"
