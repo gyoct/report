@@ -1,29 +1,45 @@
-<!DOCTYPE html><html><head><meta charset='utf-8'>
-<title>Reports</title>
-<style>
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Alpha Reports</title><style>
+:root{
+  --bg:#0f172a; --panel:#1e293b; --panel2:#27354a; --line:#334155;
+  --txt:#e2e8f0; --muted:#94a3b8; --train:#38bdf8; --prod:#34d399;
+}
+*{box-sizing:border-box;}
 body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-     max-width:760px;margin:40px auto;color:#222;line-height:1.5;}
-h1{border-bottom:2px solid #444;padding-bottom:6px;}
-h2{margin-top:28px;color:#1a3c6e;}
-h3{margin:6px 0;color:#555;font-weight:600;}
-ol{margin-top:4px;}
-li{margin:4px 0;}
-a{color:#1558b0;text-decoration:none;} a:hover{text-decoration:underline;}
-.missing{color:#999;}
-.meta{color:#777;font-size:13px;margin-top:6px;}
-</style></head><body>
-<h1>Reports</h1>
-<div class='meta'>generated: 2026-06-04 09:42:59 UTC</div>
-<h2>BTC</h2>
-<h3>linear</h3>
-<ol>
-<li><a href="btc_eqweights.html">Equally weighted</a></li>
-<li><a href="btc_weighted.html">Weighted</a></li>
-</ol>
-<h2>ETH</h2>
-<h3>linear</h3>
-<ol>
-<li><a href="eth_eqweights.html">Equally weighted</a></li>
-<li><a href="eth_weighted.html">Weighted</a></li>
-</ol>
-</body></html>
+     margin:0;background:radial-gradient(1200px 600px at 20% -10%,#1e293b,#0f172a);
+     color:var(--txt);line-height:1.5;min-height:100vh;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 24px 64px;}
+header h1{margin:0;font-size:30px;letter-spacing:.3px;}
+header .meta{color:var(--muted);font-size:13px;margin-top:8px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+      gap:24px;margin-top:32px;}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;
+      overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.35);
+      transition:transform .15s ease,box-shadow .15s ease;}
+.card:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,.45);}
+.card-head{padding:18px 22px;background:linear-gradient(90deg,#334155,#1e293b);
+           border-bottom:1px solid var(--line);}
+.sym{font-size:22px;font-weight:700;letter-spacing:1px;}
+.stage{padding:16px 22px;}
+.stage + .stage{border-top:1px dashed var(--line);}
+.stage-head{display:flex;align-items:center;gap:8px;font-size:12px;
+            text-transform:uppercase;letter-spacing:1.5px;font-weight:700;
+            margin-bottom:12px;}
+.stage-training .stage-head{color:var(--train);}
+.stage-production .stage-head{color:var(--prod);}
+.count{font-size:11px;color:var(--muted);background:var(--panel2);
+       border-radius:10px;padding:1px 8px;font-weight:600;letter-spacing:0;}
+.pills{display:flex;flex-direction:column;gap:8px;}
+.pill{display:flex;flex-direction:column;text-decoration:none;color:var(--txt);
+      background:var(--panel2);border:1px solid var(--line);border-radius:10px;
+      padding:10px 14px;transition:border-color .15s,background .15s;}
+.pill:hover{background:#30425c;border-color:#475569;}
+.stage-training .pill:hover{border-color:var(--train);}
+.stage-production .pill:hover{border-color:var(--prod);}
+.pill-label{font-weight:600;font-size:14px;}
+.pill-file{font-size:11px;color:var(--muted);margin-top:2px;
+           font-family:ui-monospace,SFMono-Regular,Menlo,monospace;}
+.pill.missing{opacity:.5;cursor:not-allowed;}
+.pill.missing .pill-file{color:#ef9a9a;}
+.empty{color:var(--muted);font-size:13px;padding:4px 0;}
+footer{color:var(--muted);font-size:12px;margin-top:40px;text-align:center;}
+</style></head><body><div class='wrap'><header><h1>Alpha Reports</h1><div class='meta'>generated: 2026-06-07 14:41:39 UTC</div></header><div class='grid'><div class="card"><div class="card-head"><span class="sym">BTC</span></div><div class="stage stage-training"><div class="stage-head">Training<span class="count">2</span></div><div class="pills"><a class="pill" href="btc_eqweights.html"><span class="pill-label">Equally weighted</span><span class="pill-file">btc_eqweights.html</span></a><a class="pill" href="btc_weighted.html"><span class="pill-label">Weighted</span><span class="pill-file">btc_weighted.html</span></a></div></div><div class="stage stage-production"><div class="stage-head">Production<span class="count">2</span></div><div class="pills"><a class="pill" href="btc_prod.html"><span class="pill-label">Monetization</span><span class="pill-file">btc_prod.html</span></a><a class="pill" href="btc_prod2.html"><span class="pill-label">Monetization 2</span><span class="pill-file">btc_prod2.html</span></a></div></div></div><div class="card"><div class="card-head"><span class="sym">ETH</span></div><div class="stage stage-training"><div class="stage-head">Training<span class="count">2</span></div><div class="pills"><a class="pill" href="eth_eqweights.html"><span class="pill-label">Equally weighted</span><span class="pill-file">eth_eqweights.html</span></a><a class="pill" href="eth_weighted.html"><span class="pill-label">Weighted</span><span class="pill-file">eth_weighted.html</span></a></div></div><div class="stage stage-production"><div class="stage-head">Production<span class="count">1</span></div><div class="pills"><a class="pill" href="eth_prod.html"><span class="pill-label">Monetization</span><span class="pill-file">eth_prod.html</span></a></div></div></div></div><footer>Training reports on top &middot; Production reports below &middot; per symbol</footer></div></body></html>
