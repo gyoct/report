@@ -9,10 +9,10 @@ set -euo pipefail
 REPORT_DIR="/home/guanyang/work/report"
 PROD="/home/guanyang/work/CR_TRAINING/PY/prod"
 
-# echo "==> syncing prod logs/config from byb_prod"
-# bash "$PROD/btc_monetization/rsync_bybprod.sh"
-# bash "$PROD/btc_monetization2/rsync_bybprod.sh"
-# bash "$PROD/eth/rsync_bybprod.sh"
+echo "==> syncing prod logs/config from byb_prod"
+bash "$PROD/btc_monetization/rsync_bybprod.sh"
+bash "$PROD/btc_monetization2/rsync_bybprod.sh"
+bash "$PROD/eth/rsync_bybprod.sh"
 
 echo "==> analyzing raw logs -> analysis_out (3 parallel processes)"
 # The three folders are independent, so analyze them concurrently. Each logs to
