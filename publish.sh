@@ -34,6 +34,12 @@ for pd in "${pids[@]}"; do
 done
 [ "$analyze_failed" -eq 0 ] || { echo "ERROR: analyze_alpha.py failed" >&2; exit 1; }
 
+echo "==> building btc_monetization2 order summary (order_multi.R)"
+# Reconstructs per-order state from the raw order logs and writes
+# order_summary.csv / order_hourly.csv into btc_monetization2/analysis_out,
+# which build_report.py picks up for the Order summary section.
+Rscript "$PROD/btc_monetization2/order/order_multi.R"
+
 echo "==> regenerating reports"
 python "$PROD/btc_monetization/build_report.py" \
   --analysis_out "$PROD/btc_monetization/analysis_out" \
