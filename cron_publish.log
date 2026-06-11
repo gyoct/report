@@ -8103,3 +8103,13 @@ Wrote /home/guanyang/work/report/btc_prod2.html  (1881 KB)
 Reading from /home/guanyang/work/CR_TRAINING/PY/prod/eth/analysis_out
 Wrote /home/guanyang/work/report/eth_prod.html  (1454 KB)
 ==> rebuilding index + publishing
+[main 0d989b4] publish reports 2026-06-11 06:24:50 UTC
+ 5 files changed, 2117 insertions(+), 1942 deletions(-)
+ rewrite btc_prod2.html (60%)
+ rewrite eth_prod.html (68%)
+To github.com:gyoct/report.git
+   46055d8..0d989b4  main -> main
+wrote /home/guanyang/work/report/index.html  (2 symbol(s), 7 report(s))
+[publish] committed + pushed to origin/main
+==> done
+===== publish end   Thu Jun 11 06:24:55 UTC 2026 (exit 0) =====
