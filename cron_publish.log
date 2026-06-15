@@ -22608,3 +22608,11 @@ Wrote /home/guanyang/work/report/btc_prod2.html  (3481 KB)
 Reading from /home/guanyang/work/CR_TRAINING/PY/prod/eth/analysis_out
 Wrote /home/guanyang/work/report/eth_prod.html  (2592 KB)
 ==> rebuilding index + publishing
+[main 3e4ecaa] publish reports 2026-06-15 05:28:13 UTC
+ 5 files changed, 723 insertions(+), 596 deletions(-)
+To github.com:gyoct/report.git
+   6ae8d77..3e4ecaa  main -> main
+wrote /home/guanyang/work/report/index.html  (2 symbol(s), 7 report(s))
+[publish] committed + pushed to origin/main
+==> done
+===== publish end   Mon Jun 15 05:28:19 UTC 2026 (exit 0) =====
