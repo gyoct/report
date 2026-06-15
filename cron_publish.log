@@ -23650,3 +23650,137 @@ Reading from /home/guanyang/work/CR_TRAINING/PY/prod/eth/analysis_out
   [skip] missing position_midprice.csv
 Wrote /home/guanyang/work/report/eth_prod.html  (2689 KB)
 ==> rebuilding index + publishing
+[main 52fd572] publish reports 2026-06-15 13:34:27 UTC
+ 5 files changed, 1404 insertions(+), 1270 deletions(-)
+ rewrite eth_prod.html (61%)
+To github.com:gyoct/report.git
+   f76cd2d..52fd572  main -> main
+wrote /home/guanyang/work/report/index.html  (2 symbol(s), 7 report(s))
+[publish] committed + pushed to origin/main
+==> done
+===== publish end   Mon Jun 15 13:34:35 UTC 2026 (exit 0) =====
+===== publish start Mon Jun 15 14:00:01 UTC 2026 =====
+==> syncing prod logs/config from byb_prod
+receiving incremental file list
+
+sent 20 bytes  received 268 bytes  192.00 bytes/sec
+total size is 100,066,830,670  speedup is 347,454,273.16
+receiving incremental file list
+
+sent 20 bytes  received 140 bytes  64.00 bytes/sec
+total size is 24,818  speedup is 155.11
+receiving incremental file list
+lr_S10_1781143546279_2026-06-11_2026-06-15
+              0   0%    0.00kB/s    0:00:00    1,112,322,304  17%    1.04GB/s    0:00:04    1,188,518,704  18%  433.94MB/s    0:00:11    2,256,937,368  35%  595.90MB/s    0:00:06    3,311,205,272  52%  684.84MB/s    0:00:04    4,448,345,832  70%  689.98MB/s    0:00:02    5,269,192,568  83%  958.77MB/s    0:00:01    5,294,817,144  83%  713.41MB/s    0:00:01    5,324,603,256  83%  472.82MB/s    0:00:02    5,354,225,528  84%  212.63MB/s    0:00:04    5,384,109,944  84%   27.40MB/s    0:00:34    5,414,059,896  85%   28.42MB/s    0:00:31    5,443,780,472  85%   28.41MB/s    0:00:30    5,473,468,280  86%   28.43MB/s    0:00:29    5,502,959,480  86%   28.34MB/s    0:00:28    5,530,812,280  87%   27.85MB/s    0:00:28    5,560,663,928  87%   27.88MB/s    0:00:27    5,591,007,096  88%   28.03MB/s    0:00:26    5,621,317,496  88%   28.22MB/s    0:00:25    5,651,660,664  89%   28.79MB/s    0:00:23    5,679,742,840  89%   28.38MB/s    0:00:22    5,709,954,936  90%   28.33MB/s    0:00:21    5,739,446,136  90%   28.14MB/s    0:00:20    5,768,150,904  90%   27.77MB/s    0:00:20    5,797,642,104  91%   28.11MB/s    0:00:18    5,825,396,600  91%   27.53MB/s    0:00:18    5,855,575,928  92%   27.69MB/s    0:00:17    5,884,346,232  92%   27.70MB/s    0:00:16    5,913,771,896  93%   27.69MB/s    0:00:15    5,942,935,416  93%   28.02MB/s    0:00:13    5,972,393,848  94%   27.85MB/s    0:00:13    6,002,409,336  94%   28.14MB/s    0:00:11    6,030,983,032  95%   27.94MB/s    0:00:10    6,060,736,376  95%   28.09MB/s    0:00:09    6,091,046,776  96%   28.29MB/s    0:00:08    6,120,439,672  96%   28.15MB/s    0:00:07    6,150,061,944  96%   28.40MB/s    0:00:06    6,178,668,408  97%   28.12MB/s    0:00:05    6,208,454,520  97%   28.00MB/s    0:00:04    6,238,306,168  98%   28.10MB/s    0:00:03    6,268,288,888  98%   28.19MB/s    0:00:02    6,298,304,376  99%   28.53MB/s    0:00:01    6,327,304,056  99%   28.35MB/s    0:00:00    6,344,237,056 100%  139.43MB/s    0:00:43 (xfr#1, to-chk=0/6)
+
+sent 580,810 bytes  received 1,078,326,142 bytes  16,727,239.57 bytes/sec
+total size is 44,531,212,133  speedup is 41.27
+receiving incremental file list
+order_1781143546276_2026-06-11
+              0   0%    0.00kB/s    0:00:00        1,400,832 100%    1.30GB/s    0:00:00 (xfr#1, to-chk=0/11)
+
+sent 7,129 bytes  received 18,356 bytes  10,194.00 bytes/sec
+total size is 2,437,120  speedup is 95.63
+receiving incremental file list
+
+sent 20 bytes  received 140 bytes  106.67 bytes/sec
+total size is 24,829  speedup is 155.18
+receiving incremental file list
+lr_S10_1780902683854_2026-06-08_2026-06-15
+              0   0%    0.00kB/s    0:00:00    1,147,514,480  15%    1.07GB/s    0:00:05    1,253,768,656  16%  389.47MB/s    0:00:15    2,307,200,728  30%  540.75MB/s    0:00:09    3,387,426,000  45%  637.43MB/s    0:00:06    4,571,073,024  61%  644.23MB/s    0:00:04    5,769,724,240  77%    1.05GB/s    0:00:01    5,876,385,920  78%  851.60MB/s    0:00:01    5,904,795,776  78%  600.64MB/s    0:00:02    5,933,402,240  79%  324.97MB/s    0:00:04    5,962,205,312  79%   45.90MB/s    0:00:32    5,990,582,400  80%   27.23MB/s    0:00:53    6,019,057,792  80%   27.25MB/s    0:00:52    6,047,664,256  80%   27.25MB/s    0:00:51    6,076,139,648  81%   27.18MB/s    0:00:50    6,105,892,992  81%   27.50MB/s    0:00:48    6,135,515,264  82%   27.77MB/s    0:00:47    6,164,646,016  82%   27.90MB/s    0:00:46    6,193,776,768  82%   28.06MB/s    0:00:44    6,223,530,112  83%   28.05MB/s    0:00:43    6,253,774,976  83%   28.20MB/s    0:00:42    6,283,888,768  83%   28.44MB/s    0:00:41    6,313,543,808  84%   28.55MB/s    0:00:39    6,343,329,920  84%   28.56MB/s    0:00:38    6,372,132,992  85%   28.22MB/s    0:00:38    6,400,510,080  85%   27.80MB/s    0:00:37    6,429,149,312  85%   27.57MB/s    0:00:37    6,455,003,264  86%   26.64MB/s    0:00:37    6,483,642,496  86%   26.60MB/s    0:00:36    6,512,380,032  87%   26.69MB/s    0:00:35    6,540,855,424  87%   26.64MB/s    0:00:34    6,569,592,960  87%   27.32MB/s    0:00:32    6,598,068,352  88%   27.28MB/s    0:00:31    6,626,740,352  88%   27.27MB/s    0:00:30    6,655,445,120  88%   27.32MB/s    0:00:29    6,684,772,480  89%   27.45MB/s    0:00:28    6,713,510,016  89%   27.51MB/s    0:00:27    6,740,576,384  90%   27.13MB/s    0:00:26    6,768,625,792  90%   26.98MB/s    0:00:25    6,797,985,920  90%   27.01MB/s    0:00:24    6,826,559,616  91%   26.96MB/s    0:00:23    6,855,559,296  91%   27.42MB/s    0:00:22    6,882,658,432  91%   27.19MB/s    0:00:21    6,911,527,040  92%   27.07MB/s    0:00:20    6,936,561,792  92%   26.23MB/s    0:00:20    6,965,692,544  93%   26.26MB/s    0:00:19    6,995,019,904  93%   26.79MB/s    0:00:17    7,022,381,184  93%   26.43MB/s    0:00:16    7,050,528,896  94%   27.17MB/s    0:00:15    7,079,069,824  94%   27.03MB/s    0:00:14    7,107,086,464  94%   26.73MB/s    0:00:13    7,135,070,336  95%   26.87MB/s    0:00:12    7,162,333,312  95%   26.66MB/s    0:00:11    7,190,775,936  96%   26.65MB/s    0:00:10    7,218,858,112  96%   26.66MB/s    0:00:09    7,246,088,320  96%   26.48MB/s    0:00:08    7,274,203,264  97%   26.67MB/s    0:00:07    7,302,252,672  97%   26.58MB/s    0:00:06    7,330,596,992  97%   26.56MB/s    0:00:05    7,359,006,848  98%   26.84MB/s    0:00:04    7,389,481,088  98%   27.39MB/s    0:00:03    7,419,496,576  99%   27.86MB/s    0:00:02    7,448,529,024  99%   28.11MB/s    0:00:01    7,477,528,704  99%   28.26MB/s    0:00:00    7,481,442,304 100%  111.11MB/s    0:01:04 (xfr#1, to-chk=0/3)
+
+sent 612,641 bytes  received 1,621,732,978 bytes  20,406,863.13 bytes/sec
+total size is 21,308,456,196  speedup is 13.13
+receiving incremental file list
+
+sent 20 bytes  received 126 bytes  97.33 bytes/sec
+total size is 24,624  speedup is 168.66
+==> analyzing raw logs -> analysis_out (3 parallel processes)
+    [ok]   btc_monetization
+    [ok]   btc_monetization2
+    [ok]   eth
+==> building btc_monetization2 order summary (order_multi.R)
+Loading required package: bit
+
+Attaching package: ‘bit’
+
+The following object is masked from ‘package:data.table’:
+
+    setattr
+
+The following object is masked from ‘package:base’:
+
+    xor
+
+Attaching package bit64
+package:bit64 (c) 2011-2017 Jens Oehlschlaegel
+creators: integer64 runif64 seq :
+coercion: as.integer64 as.vector as.logical as.integer as.double as.character as.bitstring
+logical operator: ! & | xor != == < <= >= >
+arithmetic operator: + - * / %/% %% ^
+math: sign abs sqrt log log2 log10
+math: floor ceiling trunc round
+querying: is.integer64 is.vector [is.atomic} [length] format print str
+values: is.na is.nan is.finite is.infinite
+aggregation: any all min max range sum prod
+cumulation: diff cummin cummax cumsum cumprod
+access: length<- [ [<- [[ [[<-
+combine: c rep cbind rbind as.data.frame
+WARNING don't use as subscripts
+WARNING semantics differ from integer
+for more help type ?bit64
+
+Attaching package: ‘bit64’
+
+The following objects are masked from ‘package:base’:
+
+    :, %in%, colSums, is.double, match, order, rank, rowSums
+
+[1] "/home/guanyang/work/CR_TRAINING/PY/prod/btc_monetization2/data/order_1780899830169_2026-06-08" "/home/guanyang/work/CR_TRAINING/PY/prod/btc_monetization2/data/order_1780902620102_2026-06-08"
+[3] "/home/guanyang/work/CR_TRAINING/PY/prod/btc_monetization2/data/order_1780913349725_2026-06-08" "/home/guanyang/work/CR_TRAINING/PY/prod/btc_monetization2/data/order_1780989789007_2026-06-09"
+[5] "/home/guanyang/work/CR_TRAINING/PY/prod/btc_monetization2/data/order_1781079731539_2026-06-10" "/home/guanyang/work/CR_TRAINING/PY/prod/btc_monetization2/data/order_1781104180009_2026-06-10"
+[7] "/home/guanyang/work/CR_TRAINING/PY/prod/btc_monetization2/data/order_1781106388357_2026-06-10" "/home/guanyang/work/CR_TRAINING/PY/prod/btc_monetization2/data/order_1781143546276_2026-06-11"
+Exclusion: 1 window(s); 738 event row(s) excluded from metrics & pnl
+Key: <product, ukey, dataDate>
+             product      ukey dataDate           startTime             endTime Count  fillRate TotalVolume  turnover avgHoldingSec commission       pnl       pnl_pct     alpnl     alpnl_pct
+              <char>     <int>    <int>              <POSc>              <POSc> <int>     <num>       <num>     <num>         <num>      <num>     <num>         <num>     <num>         <num>
+1: btc_monetization2 130200054 20260608 2026-06-08 06:29:25 2026-06-08 23:45:09   547 0.5941499    20576.28 108.33333      27.60653  -4.115256 -3.095559 -0.0001504431  1.019698  4.955694e-05
+2: btc_monetization2 130200054 20260609 2026-06-09 00:00:31 2026-06-09 23:58:49   497 0.6317907    19611.44 104.66667      33.64032  -3.922288 -2.688983 -0.0001371130  1.233305  6.288703e-05
+3: btc_monetization2 130200054 20260610 2026-06-10 15:48:04 2026-06-10 23:59:05   341 0.5747801    12086.16  32.66667      19.10815  -2.417232 -1.375054 -0.0001137709  1.042179  8.622908e-05
+4: btc_monetization2 130200054 20260611 2026-06-11 00:14:18 2026-06-11 23:59:38   707 0.6548798    29038.23  49.36667      38.51180  -5.807646 -3.189212 -0.0001098280  2.618434  9.017196e-05
+5: btc_monetization2 130200054 20260612 2026-06-12 00:04:54 2026-06-12 23:35:32   550 0.5927273    20713.61  32.60000      39.77101  -4.142722 -3.269822 -0.0001578586  0.872900  4.214138e-05
+6: btc_monetization2 130200054 20260613 2026-06-13 00:14:56 2026-06-13 23:36:24   574 0.6167247    22658.18  35.40000      78.19861  -4.531637 -3.323994 -0.0001467017  1.207643  5.329832e-05
+7: btc_monetization2 130200054 20260614 2026-06-14 00:31:21 2026-06-14 23:49:45   516 0.6782946    22548.70  35.00000     113.18012  -4.509741 -4.513841 -0.0002001818 -0.004100 -1.818286e-07
+8: btc_monetization2 130200054 20260615 2026-06-15 00:08:48 2026-06-15 13:48:49   258 0.6395349    10852.32  16.50000      55.62847  -2.170463 -1.140903 -0.0001051299  1.029560  9.487008e-05
+           hour           startTime             endTime Count  fillRate TotalVolume  turnover avgHoldingSec   commission          pnl       pnl_pct       alpnl     alpnl_pct
+         <char>              <POSc>              <POSc> <int>     <num>       <num>     <num>         <num>        <num>        <num>         <num>       <num>         <num>
+  1:        ALL 2026-06-08 06:29:25 2026-06-15 13:48:49  3990 0.6248120 158084.9254 414.53333      53.49147 -31.61698508 -22.62436530 -1.431153e-04  8.99261978  5.688474e-05
+  2:   20260608 2026-06-08 06:29:25 2026-06-08 23:45:09   547 0.5941499  20576.2814 108.33333      27.60653  -4.11525628  -3.09555876 -1.504431e-04  1.01969752  4.955694e-05
+  3:   20260609 2026-06-09 00:00:31 2026-06-09 23:58:49   497 0.6317907  19611.4409 104.66667      33.64032  -3.92228818  -2.68898300 -1.371130e-04  1.23330518  6.288703e-05
+  4:   20260610 2026-06-10 15:48:04 2026-06-10 23:59:05   341 0.5747801  12086.1619  32.66667      19.10815  -2.41723238  -1.37505374 -1.137709e-04  1.04217864  8.622908e-05
+  5:   20260611 2026-06-11 00:14:18 2026-06-11 23:59:38   707 0.6548798  29038.2298  49.36667      38.51180  -5.80764596  -3.18921174 -1.098280e-04  2.61843422  9.017196e-05
+ ---                                                                                                                                                                         
+163: 2026061509 2026-06-15 09:19:36 2026-06-15 09:46:36    11 0.7272727    525.3274   0.80000      44.07957  -0.10506548   0.02286802  4.353099e-05  0.12793350  2.435310e-04
+164: 2026061510 2026-06-15 10:11:03 2026-06-15 10:11:25     2 1.0000000    131.3796   0.20000      21.99165  -0.02627592  -0.02221278 -1.690733e-04  0.00406314  3.092672e-05
+165: 2026061511 2026-06-15 11:02:31 2026-06-15 11:59:20    20 0.4000000    529.0903   0.80000      16.60821  -0.10581806  -0.09545594 -1.804152e-04  0.01036212  1.958479e-05
+166: 2026061512 2026-06-15 12:22:14 2026-06-15 12:42:05    19 0.6315789    794.7691   1.20000      52.27613  -0.15895382  -0.10948574 -1.377579e-04  0.04946808  6.224208e-05
+167: 2026061513 2026-06-15 13:11:14 2026-06-15 13:48:49    19 0.4736842    600.1002   0.90000      24.35584  -0.12002004  -0.13602812 -2.266757e-04 -0.01600808 -2.667568e-05
+
+Wrote /home/guanyang/work/CR_TRAINING/PY/prod/btc_monetization2/analysis_out/order_summary.csv
+Wrote /home/guanyang/work/CR_TRAINING/PY/prod/btc_monetization2/analysis_out/order_hourly.csv
+Wrote /home/guanyang/work/CR_TRAINING/PY/prod/btc_monetization2/analysis_out/position_midprice.csv
+Wrote /home/guanyang/work/CR_TRAINING/PY/prod/btc_monetization2/analysis_out/cum_pnl_commission.csv
+==> regenerating reports
+Reading from /home/guanyang/work/CR_TRAINING/PY/prod/btc_monetization/analysis_out
+  [skip] missing order_hourly.csv
+  [skip] missing cum_pnl_commission.csv
+  [skip] missing position_midprice.csv
+Wrote /home/guanyang/work/report/btc_prod.html  (1390 KB)
+Reading from /home/guanyang/work/CR_TRAINING/PY/prod/btc_monetization2/analysis_out
+Wrote /home/guanyang/work/report/btc_prod2.html  (5330 KB)
+Reading from /home/guanyang/work/CR_TRAINING/PY/prod/eth/analysis_out
+  [skip] missing order_hourly.csv
+  [skip] missing cum_pnl_commission.csv
+  [skip] missing position_midprice.csv
+Wrote /home/guanyang/work/report/eth_prod.html  (2701 KB)
+==> rebuilding index + publishing
