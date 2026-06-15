@@ -23118,3 +23118,49 @@ Wrote /home/guanyang/work/report/btc_prod2.html  (5221 KB)
 Reading from /home/guanyang/work/CR_TRAINING/PY/prod/eth/analysis_out
 Wrote /home/guanyang/work/report/eth_prod.html  (2640 KB)
 ==> rebuilding index + publishing
+[main 65f24c7] publish reports 2026-06-15 09:35:16 UTC
+ 5 files changed, 1384 insertions(+), 1257 deletions(-)
+ rewrite eth_prod.html (65%)
+To github.com:gyoct/report.git
+   e522c50..65f24c7  main -> main
+wrote /home/guanyang/work/report/index.html  (2 symbol(s), 7 report(s))
+[publish] committed + pushed to origin/main
+==> done
+===== publish end   Mon Jun 15 09:35:23 UTC 2026 (exit 0) =====
+===== publish start Mon Jun 15 10:00:01 UTC 2026 =====
+==> syncing prod logs/config from byb_prod
+receiving incremental file list
+
+sent 20 bytes  received 268 bytes  115.20 bytes/sec
+total size is 100,066,830,670  speedup is 347,454,273.16
+receiving incremental file list
+
+sent 20 bytes  received 140 bytes  106.67 bytes/sec
+total size is 24,818  speedup is 155.11
+receiving incremental file list
+lr_S10_1781143546279_2026-06-11_2026-06-15
+              0   0%    0.00kB/s    0:00:00    1,220,331,088  33%    1.14GB/s    0:00:02    2,428,294,544  66%    1.13GB/s    0:00:01    3,374,521,520  92%    1.04GB/s    0:00:00    3,401,456,816  93%  808.95MB/s    0:00:00    3,430,587,568  94%  525.39MB/s    0:00:00    3,459,718,320  94%  245.11MB/s    0:00:00    3,488,914,608  95%   27.26MB/s    0:00:05    3,517,914,288  96%   27.77MB/s    0:00:04    3,547,012,272  97%   27.75MB/s    0:00:03    3,576,208,560  98%   27.76MB/s    0:00:02    3,604,946,096  98%   27.64MB/s    0:00:01    3,631,979,696  99%   27.15MB/s    0:00:00    3,646,853,120 100%  277.12MB/s    0:00:12 (xfr#1, to-chk=0/6)
+
+sent 464,758 bytes  received 275,600,975 bytes  6,652,186.34 bytes/sec
+total size is 41,833,828,197  speedup is 151.54
+receiving incremental file list
+order_1781143546276_2026-06-11
+              0   0%    0.00kB/s    0:00:00        1,363,968 100%    1.27GB/s    0:00:00 (xfr#1, to-chk=0/11)
+
+sent 7,057 bytes  received 14,244 bytes  8,520.40 bytes/sec
+total size is 2,400,256  speedup is 112.68
+receiving incremental file list
+
+sent 20 bytes  received 140 bytes  106.67 bytes/sec
+total size is 24,829  speedup is 155.18
+receiving incremental file list
+lr_S10_1780902683854_2026-06-08_2026-06-15
+              0   0%    0.00kB/s    0:00:00      932,366,784  26%  362.93MB/s    0:00:07    2,131,270,464  59%  589.14MB/s    0:00:02    3,243,946,528  90%  690.86MB/s    0:00:00    3,271,307,808  91%  569.40MB/s    0:00:00    3,301,093,920  92%  560.82MB/s    0:00:00    3,330,945,568  93%  283.97MB/s    0:00:00    3,360,567,840  94%   27.80MB/s    0:00:07    3,390,550,560  95%   28.43MB/s    0:00:05    3,420,434,976  95%   28.45MB/s    0:00:04    3,450,384,928  96%   28.48MB/s    0:00:03    3,480,203,808  97%   28.53MB/s    0:00:02    3,510,186,528  98%   28.53MB/s    0:00:01    3,540,070,944  99%   28.52MB/s    0:00:00    3,565,207,552 100%  221.98MB/s    0:00:15 (xfr#1, to-chk=0/3)
+
+sent 455,661 bytes  received 324,132,126 bytes  6,980,382.52 bytes/sec
+total size is 17,392,221,444  speedup is 53.58
+receiving incremental file list
+
+sent 20 bytes  received 126 bytes  97.33 bytes/sec
+total size is 24,624  speedup is 168.66
+==> analyzing raw logs -> analysis_out (3 parallel processes)
