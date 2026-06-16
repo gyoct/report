@@ -25933,3 +25933,48 @@ Reading from /home/guanyang/work/CR_TRAINING/PY/prod/eth/analysis_out
   [skip] missing position_midprice.csv
 Wrote /home/guanyang/work/report/eth_prod.html  (2893 KB)
 ==> rebuilding index + publishing
+[main d3fdb28] publish reports 2026-06-16 06:42:20 UTC
+ 5 files changed, 734 insertions(+), 600 deletions(-)
+To github.com:gyoct/report.git
+   a5dbea3..d3fdb28  main -> main
+wrote /home/guanyang/work/report/index.html  (2 symbol(s), 7 report(s))
+[publish] committed + pushed to origin/main
+==> done
+===== publish end   Tue Jun 16 06:42:27 UTC 2026 (exit 0) =====
+===== publish start Tue Jun 16 07:00:01 UTC 2026 =====
+==> syncing prod logs/config from byb_prod
+receiving incremental file list
+
+sent 20 bytes  received 268 bytes  192.00 bytes/sec
+total size is 100,066,830,670  speedup is 347,454,273.16
+receiving incremental file list
+
+sent 20 bytes  received 140 bytes  64.00 bytes/sec
+total size is 24,818  speedup is 155.11
+receiving incremental file list
+lr_S10_1781143546279_2026-06-11_2026-06-16
+              0   0%    0.00kB/s    0:00:00    1,129,885,840  36%    1.05GB/s    0:00:01    2,273,383,520  74%    1.06GB/s    0:00:00    2,672,612,984  87%  849.88MB/s    0:00:00    2,702,005,880  88%  644.53MB/s    0:00:00    2,731,398,776  89%  381.93MB/s    0:00:00    2,761,938,552  90%  116.45MB/s    0:00:02    2,792,216,184  91%   28.52MB/s    0:00:09    2,822,657,656  92%   28.77MB/s    0:00:08    2,852,935,288  93%   28.98MB/s    0:00:07    2,883,409,528  94%   28.98MB/s    0:00:06    2,912,605,816  94%   28.72MB/s    0:00:05    2,942,523,000  95%   28.59MB/s    0:00:04    2,972,374,648  96%   28.49MB/s    0:00:03    3,001,800,312  97%   28.23MB/s    0:00:02    3,031,357,048  98%   28.31MB/s    0:00:01    3,060,061,816  99%   27.93MB/s    0:00:00    3,067,285,504 100%  179.99MB/s    0:00:16 (xfr#1, to-chk=0/7)
+
+sent 412,690 bytes  received 409,306,724 bytes  10,372,643.39 bytes/sec
+total size is 52,899,043,509  speedup is 129.11
+receiving incremental file list
+order_1781143546276_2026-06-11
+              0   0%    0.00kB/s    0:00:00        1,654,784 100%    1.54GB/s    0:00:00 (xfr#1, to-chk=0/11)
+
+sent 7,723 bytes  received 21,988 bytes  19,807.33 bytes/sec
+total size is 2,691,072  speedup is 90.57
+receiving incremental file list
+
+sent 20 bytes  received 140 bytes  64.00 bytes/sec
+total size is 24,829  speedup is 155.18
+receiving incremental file list
+lr_S10_1780902683854_2026-06-08_2026-06-16
+              0   0%    0.00kB/s    0:00:00    1,112,837,528  30%    1.04GB/s    0:00:02    1,853,748,424  51%  720.99MB/s    0:00:02    2,997,933,488  82%  828.47MB/s    0:00:00    3,224,996,432  88%  690.99MB/s    0:00:00    3,255,634,512  89%  459.12MB/s    0:00:00    3,286,272,592  90%  341.54MB/s    0:00:00    3,316,910,672  91%   76.01MB/s    0:00:03    3,347,614,288  92%   29.23MB/s    0:00:09    3,378,121,296  93%   29.19MB/s    0:00:08    3,408,824,912  93%   29.22MB/s    0:00:07    3,439,168,080  94%   29.16MB/s    0:00:06    3,469,871,696  95%   29.14MB/s    0:00:05    3,500,542,544  96%   29.17MB/s    0:00:04    3,531,016,784  97%   29.09MB/s    0:00:03    3,561,589,328  98%   29.15MB/s    0:00:02    3,592,227,408  99%   29.14MB/s    0:00:01    3,622,931,024  99%   29.17MB/s    0:00:00    3,626,962,944 100%  196.43MB/s    0:00:17 (xfr#1, to-chk=0/4)
+
+sent 452,837 bytes  received 426,033,315 bytes  8,281,284.50 bytes/sec
+total size is 32,001,862,300  speedup is 75.04
+receiving incremental file list
+
+sent 20 bytes  received 126 bytes  58.40 bytes/sec
+total size is 24,624  speedup is 168.66
+==> analyzing raw logs -> analysis_out (3 parallel processes)
