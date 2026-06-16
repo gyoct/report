@@ -67,8 +67,11 @@ def discover(dir_: str):
     """Return {symbol: {stage: [(label, file), ...]}} from *.html in dir_."""
     out: dict[str, dict[str, list[tuple[str, str]]]] = {}
     files = sorted(os.path.basename(p) for p in glob.glob(os.path.join(dir_, "*.html")))
+    # index.html is the page itself; summary.html is a standalone page (SpreadArb
+    # order summary) that is intentionally kept off the landing page.
+    skip = {"index.html", "summary.html"}
     for f in files:
-        if f == "index.html":
+        if f in skip:
             continue
         symbol, stage, label = classify(f)
         out.setdefault(symbol, {"Training": [], "Production": []})

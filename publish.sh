@@ -53,6 +53,16 @@ python "$PROD/eth/build_report.py" \
   --analysis_out "$PROD/eth/analysis_out" \
   --out_dir "$REPORT_DIR" --name eth_prod.html
 
+echo "==> building SpreadArb summary (standalone page, kept out of index)"
+# Pull bgb logs, rebuild Summary, render summary.html into the report repo.
+# Non-fatal: a failure here must NOT block the main reports, so it runs inside an
+# `if` (set -e is suppressed for the condition).
+if bash /home/guanyang/work/CR_TRAINING/SpreadArb/build_summary.sh; then
+  echo "    [ok]   summary.html"
+else
+  echo "    [WARN] SpreadArb summary failed -- skipping" >&2
+fi
+
 echo "==> rebuilding index + publishing"
 # make_index.py rebuilds index.html and (unless --no-push) commits + pushes.
 python "$REPORT_DIR/make_index.py" --dir "$REPORT_DIR"

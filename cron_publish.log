@@ -25979,3 +25979,4 @@ sent 20 bytes  received 126 bytes  58.40 bytes/sec
 total size is 24,624  speedup is 168.66
 ==> analyzing raw logs -> analysis_out (3 parallel processes)
     [ok]   btc_monetization
+    [ok]   btc_monetization2
