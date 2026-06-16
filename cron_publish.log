@@ -28195,3 +28195,6 @@ wrote /home/guanyang/work/report/summary.html  (77 rows, 17 columns)
 ==> done: /home/guanyang/work/report/summary.html
     [ok]   summary.html
 ==> rebuilding index + publishing
+[main 287b9da] publish reports 2026-06-16 15:43:21 UTC
+ 6 files changed, 1439 insertions(+), 994 deletions(-)
+ rewrite eth_prod.html (63%)
