@@ -25395,3 +25395,12 @@ Reading from /home/guanyang/work/CR_TRAINING/PY/prod/eth/analysis_out
   [skip] missing position_midprice.csv
 Wrote /home/guanyang/work/report/eth_prod.html  (2845 KB)
 ==> rebuilding index + publishing
+[main 4b60b36] publish reports 2026-06-16 02:34:42 UTC
+ 5 files changed, 1405 insertions(+), 1270 deletions(-)
+ rewrite eth_prod.html (63%)
+To github.com:gyoct/report.git
+   8be50b8..4b60b36  main -> main
+wrote /home/guanyang/work/report/index.html  (2 symbol(s), 7 report(s))
+[publish] committed + pushed to origin/main
+==> done
+===== publish end   Tue Jun 16 02:34:49 UTC 2026 (exit 0) =====
