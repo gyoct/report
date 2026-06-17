@@ -35829,3 +35829,12 @@ wrote /home/guanyang/work/report/summary.html  (82 rows, 17 columns)
 ==> done: /home/guanyang/work/report/summary.html
     [ok]   summary.html
 ==> rebuilding index + publishing
+[main 4141cb9] publish reports 2026-06-17 06:38:31 UTC
+ 6 files changed, 1784 insertions(+), 1268 deletions(-)
+ rewrite eth_prod.html (64%)
+To github.com:gyoct/report.git
+   96a1e7f..4141cb9  main -> main
+wrote /home/guanyang/work/report/index.html  (2 symbol(s), 7 report(s))
+[publish] committed + pushed to origin/main
+==> done
+===== publish end   Wed Jun 17 06:38:39 UTC 2026 (exit 0) =====
