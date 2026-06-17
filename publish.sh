@@ -15,11 +15,25 @@ bash "$PROD/btc_monetization2/rsync_bybprod.sh"
 bash "$PROD/eth/rsync_bybprod.sh"
 
 echo "==> analyzing raw logs -> analysis_out (3 parallel processes)"
+# analyze_alpha.py resumes from a byte-offset cache (only re-reads new bytes).
+# Self-heal against drift / schema change with a full --rebuild, but STAGGER it:
+# at 00:00 UTC rebuild exactly ONE product (rotating by day-of-year, so each is
+# rebuilt every 3 days); the other two stay incremental. Avoids three concurrent
+# ~100GB re-reads in the same hour. 10# forces base-10 (%j is zero-padded -> the
+# 08/09 days would otherwise be read as invalid octal).
+products=(btc_monetization btc_monetization2 eth)
+rebuild_today=""
+if [ "$(date -u +%H)" = "00" ]; then
+  rebuild_today="${products[$(( 10#$(date -u +%j) % 3 ))]}"
+  echo "    00:00 UTC -> full rebuild for: $rebuild_today (others incremental)"
+fi
 # The three folders are independent, so analyze them concurrently. Each logs to
 # its own file; we wait for all and fail the publish if any one fails.
 pids=()
-for d in btc_monetization btc_monetization2 eth; do
-  python "$PROD/$d/analyze_alpha.py" > "$PROD/$d/analyze.log" 2>&1 &
+for d in "${products[@]}"; do
+  flag=""
+  [ "$d" = "$rebuild_today" ] && flag="--rebuild"
+  python "$PROD/$d/analyze_alpha.py" $flag > "$PROD/$d/analyze.log" 2>&1 &
   pids+=("$!:$d")
 done
 analyze_failed=0
