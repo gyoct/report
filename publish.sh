@@ -13,6 +13,7 @@ echo "==> syncing prod logs/config from byb_prod"
 bash "$PROD/btc_monetization/rsync_bybprod.sh"
 bash "$PROD/btc_monetization2/rsync_bybprod.sh"
 bash "$PROD/eth/rsync_bybprod.sh"
+bash "$PROD/bgb/btc_taker/rsync_bybprod.sh"   # bgb pulls from bgb_prod
 
 echo "==> analyzing raw logs -> analysis_out (3 parallel processes)"
 # analyze_alpha.py resumes from a byte-offset cache (only re-reads new bytes).
@@ -21,10 +22,10 @@ echo "==> analyzing raw logs -> analysis_out (3 parallel processes)"
 # rebuilt every 3 days); the other two stay incremental. Avoids three concurrent
 # ~100GB re-reads in the same hour. 10# forces base-10 (%j is zero-padded -> the
 # 08/09 days would otherwise be read as invalid octal).
-products=(btc_monetization btc_monetization2 eth)
+products=(btc_monetization btc_monetization2 eth bgb/btc_taker)
 rebuild_today=""
 if [ "$(date -u +%H)" = "00" ]; then
-  rebuild_today="${products[$(( 10#$(date -u +%j) % 3 ))]}"
+  rebuild_today="${products[$(( 10#$(date -u +%j) % ${#products[@]} ))]}"
   echo "    00:00 UTC -> full rebuild for: $rebuild_today (others incremental)"
 fi
 # The three folders are independent, so analyze them concurrently. Each logs to
@@ -48,11 +49,12 @@ for pd in "${pids[@]}"; do
 done
 [ "$analyze_failed" -eq 0 ] || { echo "ERROR: analyze_alpha.py failed" >&2; exit 1; }
 
-echo "==> building btc_monetization2 order summary (order_multi.R)"
+echo "==> building order summaries (order_multi.R)"
 # Reconstructs per-order state from the raw order logs and writes
-# order_summary.csv / order_hourly.csv into btc_monetization2/analysis_out,
-# which build_report.py picks up for the Order summary section.
+# order_summary.csv / order_hourly.csv into each analysis_out, which
+# build_report.py picks up for the Order summary section.
 Rscript "$PROD/btc_monetization2/order/order_multi.R"
+Rscript "$PROD/bgb/btc_taker/order/order_multi.R"
 
 echo "==> regenerating reports"
 python "$PROD/btc_monetization/build_report.py" \
@@ -66,6 +68,10 @@ python "$PROD/btc_monetization2/build_report.py" \
 python "$PROD/eth/build_report.py" \
   --analysis_out "$PROD/eth/analysis_out" \
   --out_dir "$REPORT_DIR" --name eth_prod.html
+
+python "$PROD/bgb/btc_taker/build_report.py" \
+  --analysis_out "$PROD/bgb/btc_taker/analysis_out" \
+  --out_dir "$REPORT_DIR" --name bgb_btc.html
 
 echo "==> building SpreadArb summary (standalone page, kept out of index)"
 # Pull bgb logs, rebuild Summary, render summary.html into the report repo.
