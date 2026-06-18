@@ -31,8 +31,13 @@ from datetime import datetime
 SYMBOL_ORDER = ["btc", "eth", "sol"]
 
 # optional per-file overrides: filename -> (symbol, stage, label).
-# stage must be "Training" or "Production".
-OVERRIDES: dict[str, tuple[str, str, str]] = {}
+# stage must be "Training" or "Production". Within a stage, entries are ordered
+# alphabetically by label, so a label after "Monetization 2" lands below it.
+OVERRIDES: dict[str, tuple[str, str, str]] = {
+    # bgb/btc_taker report: show under the BTC card's Production section,
+    # below "Monetization 2" ("Taker..." sorts after "Monetization 2").
+    "bgb_btc.html": ("btc", "Production", "Taker (BGB)"),
+}
 
 
 def classify(fname: str):
