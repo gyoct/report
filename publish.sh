@@ -23,7 +23,7 @@ echo "==> analyzing raw logs -> analysis_out (3 parallel processes)"
 # rebuilt every 3 days); the other two stay incremental. Avoids three concurrent
 # ~100GB re-reads in the same hour. 10# forces base-10 (%j is zero-padded -> the
 # 08/09 days would otherwise be read as invalid octal).
-products=(btc_monetization btc_monetization2 eth bgb/btc_taker)
+products=(btc_monetization btc_monetization2 btc_monetization3 eth bgb/btc_taker)
 rebuild_today=""
 if [ "$(date -u +%H)" = "00" ]; then
   rebuild_today="${products[$(( 10#$(date -u +%j) % ${#products[@]} ))]}"
@@ -55,6 +55,7 @@ echo "==> building order summaries (order_multi.R)"
 # order_summary.csv / order_hourly.csv into each analysis_out, which
 # build_report.py picks up for the Order summary section.
 Rscript "$PROD/btc_monetization2/order/order_multi.R"
+Rscript "$PROD/btc_monetization3/order/order_multi.R"
 Rscript "$PROD/bgb/btc_taker/order/order_multi.R"
 
 echo "==> regenerating reports"
@@ -65,6 +66,10 @@ python "$PROD/btc_monetization/build_report.py" \
 python "$PROD/btc_monetization2/build_report.py" \
   --analysis_out "$PROD/btc_monetization2/analysis_out" \
   --out_dir "$REPORT_DIR" --name btc_prod2.html
+
+python "$PROD/btc_monetization3/build_report.py" \
+  --analysis_out "$PROD/btc_monetization3/analysis_out" \
+  --out_dir "$REPORT_DIR" --name btc_prod3.html
 
 python "$PROD/eth/build_report.py" \
   --analysis_out "$PROD/eth/analysis_out" \
