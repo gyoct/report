@@ -12,6 +12,7 @@ PROD="/home/guanyang/work/CR_TRAINING/PY/prod"
 echo "==> syncing prod logs/config from byb_prod"
 bash "$PROD/btc_monetization/rsync_bybprod.sh"
 bash "$PROD/btc_monetization2/rsync_bybprod.sh"
+bash "$PROD/btc_monetization3/rsync_bybprod.sh"
 bash "$PROD/eth/rsync_bybprod.sh"
 bash "$PROD/bgb/btc_taker/rsync_bybprod.sh"   # bgb pulls from bgb_prod
 
