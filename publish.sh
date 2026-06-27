@@ -80,11 +80,11 @@ python "$PROD/bgb/btc_taker/build_report.py" \
   --out_dir "$REPORT_DIR" --name bgb_btc.html
 
 echo "==> building SpreadArb summary (standalone page, kept out of index)"
-# Pull bgb logs, rebuild Summary, render summary.html into the report repo.
+# Pull bgb logs, rebuild Summary, render spread.html into the report repo.
 # Non-fatal: a failure here must NOT block the main reports, so it runs inside an
 # `if` (set -e is suppressed for the condition).
 if bash /home/guanyang/work/CR_TRAINING/SpreadArb/build_summary.sh; then
-  echo "    [ok]   summary.html"
+  echo "    [ok]   spread.html"
 else
   echo "    [WARN] SpreadArb summary failed -- skipping" >&2
 fi
