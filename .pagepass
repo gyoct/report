@@ -1,0 +1,4 @@
+default: alphago
+spread.html: jupiter
+plot.html: jupiter
+btc_prod2_recent.html: public
