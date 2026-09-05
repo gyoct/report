@@ -1,0 +1,3 @@
+default: alphago
+spread.html: jupiter
+plot.html: jupiter
